@@ -1,0 +1,52 @@
+.Cords {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &_Card {
+        width: 380px;
+        height: auto;
+        background-color: #FFF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 4px 4px 5px #ccc;
+
+        button {
+            width: 50%;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #FB9400;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 15px 0 25px 0;
+            cursor: pointer;
+            box-shadow: 1px 4px 5px #8a5812;
+        }
+    }
+}
+
+.Imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    h2{
+        margin: 10px;
+        color: #1a1817;
+    }
+
+
+    img{
+        width: 120px;
+        margin: 25px 0 25px 0;
+    }
+}

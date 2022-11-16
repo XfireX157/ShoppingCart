@@ -1,0 +1,17 @@
+.avaliacao{
+    display: flex;
+
+    input {
+        display: none;
+    }
+}
+
+.stars{
+    cursor: pointer;
+    color: rgb(114, 114, 114);
+}
+
+.stars.Active{
+    color: rgb(218, 150, 25);
+}
+

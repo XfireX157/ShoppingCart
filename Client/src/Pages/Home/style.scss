@@ -1,0 +1,69 @@
+.NavigationCategory {
+    position: fixed;
+    top: 0;
+    width: 20%;
+}
+
+.CardsProducts{
+    width: 80%;
+    margin-left: 20%;
+}
+
+.Button {
+    position: fixed;
+    bottom: 0;
+    right: 70px;
+    font-size: 5rem;
+    background: transparent;
+    border: none;
+    color: #FB9400;
+    cursor: pointer;
+
+    &:hover{
+        transition: all 0.2s ease-in;
+        color: #9e620d;
+    }
+}
+
+.Modal{
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 180px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #FB9400;
+    color: #F4F4F4;
+    border-radius: 12px;
+    
+    div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+
+        &:hover{
+            cursor: pointer;
+            span {
+                color: #9e620d;
+            }
+    
+            p{
+                color: #9e620d;
+            }
+        }
+           
+        span{
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            padding-right: 8px;
+        }
+
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}

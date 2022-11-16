@@ -1,0 +1,112 @@
+.Box{
+    width: 100%;
+    height: 100%;
+}
+
+.CardsBox{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    margin: 25px 0 0 10px;
+}
+
+.Card {
+    position: relative;
+    width: 220px;
+    height: auto;
+    padding: 8px 0;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+
+
+    &:hover{
+        transition: all 0.2s ease-in;
+        background-color: #FB9400;
+        color: #fff;
+
+        .AddProduct{
+            color: #fff;
+        }
+
+        .Info{
+            h3{
+                span{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
+
+
+
+.BoxImg{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    img{
+        width: 150px;
+        height: 150px;
+
+        &:hover{
+            transition: all 0.2s ease-in;
+            width: 155px;
+            height: 155px;
+        }
+    }
+
+    span{
+        cursor: pointer;
+        position: absolute;
+        font-size: 1.6rem;
+        top: 5%;
+        right: 8%;
+    }
+}
+
+
+.BoxInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Info{
+    p{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 1rem;
+
+        span{
+            color: #FB9400;
+            font-size: 0.6rem;
+        }
+    }
+}
+
+.AddProduct{
+    width: 30%;
+    font-size: 3rem;
+    color: #FB9400;
+    vertical-align: middle;
+    cursor: pointer;
+
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
+    &:hover{
+        transition: all 0.2s ease-in;
+        font-size: 2.8rem;   
+        color: #d4800b;
+    }
+}
