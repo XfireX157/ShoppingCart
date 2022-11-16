@@ -17,7 +17,7 @@ const RouterDOM = () => {
     const [favorite, setFavorite] = useState<boolean[]>([])
     const [listando, setListando] = useState([])
     const [active, setActive] = useState<string | number | boolean | null>(false)
-    const [list, setList] = useState()
+    const [list, setList] = useState([])
     const [time, setTime] = useState(Flavors)
 
     return (

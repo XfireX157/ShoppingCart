@@ -4,6 +4,7 @@ import './styles.scss'
 import { MdAddCircle } from "react-icons/md"
 import { useNavigate } from "react-router-dom"
 import { FiEdit } from 'react-icons/fi'
+import ModalEdit from '../ModalEdit'
 
 interface IProps {
     cart: any
@@ -56,6 +57,7 @@ const Products = ({cart, setCart, favorite, setFavorite, list, activeProduct, se
     const editProduct = () => {
         setActiveProduct({...activeProduct, activeModal: !activeProduct.activeModal})
     }
+
 
     return (
             <div className="Box">

@@ -54,15 +54,15 @@ const Home = ({cart, setCart, favorite, setFavorite, setList, list, active, setA
             </div>
             <div className="CardsProducts">
                 {time.map((item: any) => 
-                <Products 
-                    cart={cart} 
-                    setCart={setCart} 
-                    favorite={favorite} 
-                    setFavorite={setFavorite}
-                    activeProduct={activeProduct}
-                    setActiveProduct={setActiveProduct}
-                    list={filteredSalles.filter((time: any) => time.category === item.name)}
-                    setList={setList}
+                    <Products 
+                        cart={cart} 
+                        setCart={setCart} 
+                        favorite={favorite} 
+                        setFavorite={setFavorite}
+                        activeProduct={activeProduct}
+                        setActiveProduct={setActiveProduct}
+                        list={filteredSalles.filter((time: any) => time.category === item.name)}
+                        setList={setList}
                 />)}
 
                 {IsModal && <Modal className='Modal' modal={ArrayModal}/>} 
@@ -73,10 +73,12 @@ const Home = ({cart, setCart, favorite, setFavorite, setList, list, active, setA
                     className='Button' 
                 />}
 
-                <ModalEdit
+            {activeProduct.activeModal && (
+                    <ModalEdit
                     activeProduct={activeProduct} 
                     setActiveProduct={setActiveProduct} 
-                />
+                    />
+                )}
             </div>
         </div>
     )
